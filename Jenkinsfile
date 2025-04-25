@@ -30,14 +30,12 @@ pipeline {
                     reuseNode true
                 }
             }
+            
             steps {
                 script {
                     sh '''
-                        ls -la
-                        node --version
-                        npm --version
                         npm test
-                        ls -la build/index.html
+                        test -f build/index.html
                     '''
                 }
             }
