@@ -38,7 +38,7 @@ pipeline {
                         npm --version
                         npm ci
                         npm test
-                        ls -la
+                        ls -la build/index.html
                     '''
                 }
             }
