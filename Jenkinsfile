@@ -36,6 +36,12 @@ pipeline {
                         node --version
                         npm --version
                         npm ci
+                        npm test -- --watchAll=false
+                        ls -la
+                    '''
+                }
+            }
+        }
                     '''
                 }
             }
