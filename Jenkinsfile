@@ -27,7 +27,9 @@ pipeline {
                 script {
                     sh '''
                         ls -la
-                        npm test
+                        node --version
+                        npm --version
+                        npm ci
                     '''
                 }
             }
